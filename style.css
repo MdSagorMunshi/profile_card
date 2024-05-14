@@ -1,0 +1,96 @@
+/* Main styles */
+.profile-card {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+}
+
+.profile-card:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transform: rotate(2deg);
+    filter: blur(3px);
+    opacity: 0.8;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-card h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.profile-card h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.profile-card p {
+    margin: 0;
+    color: #666;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/* Button styles */
+.buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.buttons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+}
+
+/* GitHub logo */
+.button-github {
+    background-image: url('https://mdsagormunshi.github.io/github.svg');
+}
+
+/* Instagram logo */
+.button-insta {
+    background-image: url('https://mdsagormunshi.github.io/insta.svg');
+}
+
+/* X button (assuming it's a close or exit button) */
+.button-x {
+    background-image: url('https://mdsagormunshi.github.io/x.svg');
+}
+
+.buttons a:hover {
+    background-color: #fff;
+}
